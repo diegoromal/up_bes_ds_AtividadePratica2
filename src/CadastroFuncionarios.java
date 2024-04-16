@@ -13,6 +13,42 @@ public class CadastroFuncionarios {
         return listaFuncionarios;
     }
 
+    public static List<Funcionario> getGerentes() {
+        List<Funcionario> tempList = new ArrayList<>();
+
+        for(Funcionario tempFunc: listaFuncionarios) {
+            if (tempFunc instanceof Gerente) {
+                tempList.add(tempFunc);
+            }
+        }
+
+        return tempList;
+    }
+
+    public static List<Funcionario> getAtendentes() {
+        List<Funcionario> tempList = new ArrayList<>();
+
+        for(Funcionario tempFunc: listaFuncionarios) {
+            if (tempFunc instanceof Atendente) {
+                tempList.add(tempFunc);
+            }
+        }
+
+        return tempList;
+    }
+
+    public static List<Funcionario> getMotoristas() {
+        List<Funcionario> tempList = new ArrayList<>();
+
+        for(Funcionario tempFunc: listaFuncionarios) {
+            if (tempFunc instanceof Motorista) {
+                tempList.add(tempFunc);
+            }
+        }
+
+        return tempList;
+    }
+
     public static boolean excluir(int matricula) {
         for (Funcionario tempFuncionario : listaFuncionarios) {
             if (tempFuncionario.getMatricula() == matricula) {
