@@ -23,6 +23,10 @@ public class CadastroFuncionarios {
         return false;
     }
 
+    public static void excluirTodos() {
+        listaFuncionarios.clear();
+    }
+
     public static boolean editar(int matricula, Funcionario novoFuncionario) {
         for (int i = 0; i < listaFuncionarios.size(); i++) {
             Funcionario funcionario = listaFuncionarios.get(i);
