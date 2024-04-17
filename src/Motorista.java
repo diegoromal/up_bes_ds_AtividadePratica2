@@ -1,23 +1,23 @@
 public class  Motorista extends Funcionario {
 
-    private String tipoCarteira;
+    private String tipoCNH;
 
-    public Motorista(int matricula, String nome, String tipoCarteira) {
+    public Motorista(int matricula, String nome, String tipoCNH) {
         super(matricula, nome);
-        this.tipoCarteira = tipoCarteira;
+        this.tipoCNH = tipoCNH;
     }
 
-    public String getTipoCarteira() {
-        return tipoCarteira;
+    public String getTipoCNH() {
+        return tipoCNH;
     }
 
-    public void setTipoCarteira(String tipoCarteira) {
-        this.tipoCarteira = tipoCarteira;
+    public void setTipoCNH(String tipoCNH) {
+        this.tipoCNH = tipoCNH;
     }
 
     @Override
     public String toString() {
-        String txt = super.toString() + "\\Tipo de Carteira: " + tipoCarteira;
+        String txt = super.toString() + "\nTipo de CNH: " + tipoCNH;
         return txt;
     }
     

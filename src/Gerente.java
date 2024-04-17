@@ -2,7 +2,7 @@ public class Gerente extends Funcionario {
 
     private String departamento;
 
-    public Gerente(String nome, int matricula, String departamento) {
+    public Gerente(int matricula, String nome, String departamento) {
         super(matricula, nome);
         this.departamento = departamento;
     }

@@ -59,8 +59,9 @@ public class CadastroFuncionarios {
         return false;
     }
 
-    public static void excluirTodos() {
+    public static boolean excluirTodos() {
         listaFuncionarios.clear();
+        return true;
     }
 
     public static boolean editar(int matricula, Funcionario novoFuncionario) {

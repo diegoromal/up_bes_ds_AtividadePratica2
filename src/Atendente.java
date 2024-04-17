@@ -18,7 +18,7 @@ public class Atendente extends Funcionario {
 
     @Override
     public String toString() {
-        String txt = super.toString() + "\\Turno: " + turno;
+        String txt = super.toString() + "\nTurno: " + turno;
         return txt;
     }
     
